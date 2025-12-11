@@ -1,0 +1,471 @@
+2481689 20:22:02.793346 --- Starting bitbake server pid 2481689 at 2025-12-11 20:22:02.793326 ---
+2481689 20:22:02.794365 Started bitbake server pid 2481689
+2481689 20:22:02.794635 Entering server connection loop
+2481689 20:22:02.794664 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481689 20:22:02.795390 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481689 20:22:02.797287 Processing Client
+2481689 20:22:02.797335 Connecting Client
+2481689 20:22:02.797924 Running command ['setFeatures', [2, 1]]
+2481689 20:22:02.797954 Sending reply (None, None)
+2481689 20:22:02.798045 Command Completed (socket: True)
+2481689 20:22:02.799670 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x/build', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-custom']]
+2481689 20:22:03.348548 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481689) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481689 20:22:03.389477 Sending reply (None, None)
+2481689 20:22:03.389895 Command Completed (socket: True)
+2481689 20:22:03.390172 Running command ['parseConfiguration']
+2481689 20:22:03.391354 Sending reply (None, None)
+2481689 20:22:03.391457 Command Completed (socket: True)
+2481689 20:22:03.391995 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481689 20:22:03.392108 Sending reply (None, None)
+2481689 20:22:03.392193 Command Completed (socket: True)
+2481689 20:22:03.392639 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481689 20:22:03.392702 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481689 20:22:03.392788 Command Completed (socket: True)
+2481689 20:22:03.418850 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.418912 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.419020 Command Completed (socket: True)
+2481689 20:22:03.419359 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.419501 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.419597 Command Completed (socket: True)
+2481689 20:22:03.421334 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.421361 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.421437 Command Completed (socket: True)
+2481689 20:22:03.421755 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.421806 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.421889 Command Completed (socket: True)
+2481689 20:22:03.423986 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.424024 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.424117 Command Completed (socket: True)
+2481689 20:22:03.424395 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.424459 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.424552 Command Completed (socket: True)
+2481689 20:22:03.425505 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.425529 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.425602 Command Completed (socket: True)
+2481689 20:22:03.425849 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.425890 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.425964 Command Completed (socket: True)
+2481689 20:22:03.426573 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481689 20:22:03.426626 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481689 20:22:03.426724 Command Completed (socket: True)
+2481689 20:22:03.428738 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.428762 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.428855 Command Completed (socket: True)
+2481689 20:22:03.429133 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.429195 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.429288 Command Completed (socket: True)
+2481689 20:22:03.429979 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481689 20:22:03.430005 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481689 20:22:03.430078 Command Completed (socket: True)
+2481689 20:22:03.430326 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481689 20:22:03.430360 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481689 20:22:03.430458 Command Completed (socket: True)
+2481689 20:22:03.431431 Running command ['clientComplete']
+2481689 20:22:03.431580 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7bc136d8b050>>
+2481689 20:22:03.431602 Sending reply (True, None)
+2481689 20:22:03.431678 Command Completed (socket: True)
+2481689 20:22:03.438664 Processing Client
+2481689 20:22:03.438790 Disconnecting Client (socket: True)
+2481689 20:22:03.440000 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7bc136d8b050>>
+2481689 20:22:03.440417 No timeout, exiting.
+2481689 20:22:03.541191 Exiting (socket: True)
+2481689 20:22:03.546145 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2481700 20:22:12.989669 --- Starting bitbake server pid 2481700 at 2025-12-11 20:22:12.989649 ---
+2481700 20:22:12.990674 Started bitbake server pid 2481700
+2481700 20:22:12.990863 Entering server connection loop
+2481700 20:22:12.990889 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481700 20:22:12.991740 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481700 20:22:12.993240 Processing Client
+2481700 20:22:12.993281 Connecting Client
+2481700 20:22:12.993777 Running command ['setFeatures', [2, 1]]
+2481700 20:22:12.993807 Sending reply (None, None)
+2481700 20:22:12.993899 Command Completed (socket: True)
+2481700 20:22:12.995577 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x/build', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'show', 'layers']]
+2481700 20:22:13.463202 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481700) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481700 20:22:13.486627 Sending reply (None, None)
+2481700 20:22:13.487058 Command Completed (socket: True)
+2481700 20:22:13.487417 Running command ['parseConfiguration']
+2481700 20:22:13.488523 Sending reply (None, None)
+2481700 20:22:13.488636 Command Completed (socket: True)
+2481700 20:22:13.489050 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481700 20:22:13.489154 Sending reply (None, None)
+2481700 20:22:13.489232 Command Completed (socket: True)
+2481700 20:22:13.489693 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481700 20:22:13.489763 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481700 20:22:13.489841 Command Completed (socket: True)
+2481700 20:22:13.497204 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.497262 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.497356 Command Completed (socket: True)
+2481700 20:22:13.497706 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.497816 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.497896 Command Completed (socket: True)
+2481700 20:22:13.499424 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.499471 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.499620 Command Completed (socket: True)
+2481700 20:22:13.499902 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.499964 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.500058 Command Completed (socket: True)
+2481700 20:22:13.502193 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.502226 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.502303 Command Completed (socket: True)
+2481700 20:22:13.502544 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.502589 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.502671 Command Completed (socket: True)
+2481700 20:22:13.503959 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.503983 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.504057 Command Completed (socket: True)
+2481700 20:22:13.504314 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.504357 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.504447 Command Completed (socket: True)
+2481700 20:22:13.505075 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.505099 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.505183 Command Completed (socket: True)
+2481700 20:22:13.505427 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.505471 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.505547 Command Completed (socket: True)
+2481700 20:22:13.506270 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481700 20:22:13.506295 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481700 20:22:13.506366 Command Completed (socket: True)
+2481700 20:22:13.507618 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481700 20:22:13.507734 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481700 20:22:13.507812 Command Completed (socket: True)
+2481700 20:22:13.508067 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481700 20:22:13.508109 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481700 20:22:13.508185 Command Completed (socket: True)
+2481700 20:22:13.509558 Running command ['clientComplete']
+2481700 20:22:13.509806 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x788fb79f3a40>>
+2481700 20:22:13.509826 Sending reply (True, None)
+2481700 20:22:13.509918 Command Completed (socket: True)
+2481700 20:22:13.610128 Processing Client
+2481700 20:22:13.610328 Disconnecting Client (socket: True)
+2481700 20:22:13.611343 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x788fb79f3a40>>
+2481700 20:22:13.611669 No timeout, exiting.
+2481700 20:22:13.712376 Exiting (socket: True)
+2481700 20:22:13.717961 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2481711 20:22:20.068649 --- Starting bitbake server pid 2481711 at 2025-12-11 20:22:20.068629 ---
+2481711 20:22:20.069800 Started bitbake server pid 2481711
+2481711 20:22:20.069982 Entering server connection loop
+2481711 20:22:20.070017 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481711 20:22:20.070731 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481711 20:22:20.072249 Processing Client
+2481711 20:22:20.072296 Connecting Client
+2481711 20:22:20.072709 Running command ['setFeatures', [2, 1]]
+2481711 20:22:20.072815 Sending reply (None, None)
+2481711 20:22:20.072906 Command Completed (socket: True)
+2481711 20:22:20.074516 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x/build', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+2481711 20:22:20.542131 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481711) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481711 20:22:20.565091 Sending reply (None, None)
+2481711 20:22:20.565437 Command Completed (socket: True)
+2481711 20:22:20.565823 Running command ['parseConfiguration']
+2481711 20:22:20.566891 Sending reply (None, None)
+2481711 20:22:20.566985 Command Completed (socket: True)
+2481711 20:22:20.567429 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481711 20:22:20.567539 Sending reply (None, None)
+2481711 20:22:20.567618 Command Completed (socket: True)
+2481711 20:22:20.568151 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481711 20:22:20.568220 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481711 20:22:20.568320 Command Completed (socket: True)
+2481711 20:22:20.575855 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.575912 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.576007 Command Completed (socket: True)
+2481711 20:22:20.576294 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.576413 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.576509 Command Completed (socket: True)
+2481711 20:22:20.578283 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.578314 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.578405 Command Completed (socket: True)
+2481711 20:22:20.578712 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.578764 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.578864 Command Completed (socket: True)
+2481711 20:22:20.581066 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.581098 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.581203 Command Completed (socket: True)
+2481711 20:22:20.581492 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.581534 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.581646 Command Completed (socket: True)
+2481711 20:22:20.582678 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.582719 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.582796 Command Completed (socket: True)
+2481711 20:22:20.583065 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.583106 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.583180 Command Completed (socket: True)
+2481711 20:22:20.584028 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481711 20:22:20.584062 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481711 20:22:20.584136 Command Completed (socket: True)
+2481711 20:22:20.585327 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.585351 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.585431 Command Completed (socket: True)
+2481711 20:22:20.585686 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.585719 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.585793 Command Completed (socket: True)
+2481711 20:22:20.586399 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481711 20:22:20.586423 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481711 20:22:20.586494 Command Completed (socket: True)
+2481711 20:22:20.586751 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481711 20:22:20.586783 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481711 20:22:20.586856 Command Completed (socket: True)
+2481711 20:22:20.588373 Running command ['getLayerPriorities']
+2481711 20:22:20.588545 Sending reply ([('core', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta/', 5), ('yocto', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/', 5), ('yoctobsp', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/', 5)], None)
+2481711 20:22:20.588650 Command Completed (socket: True)
+2481711 20:22:20.589494 Running command ['clientComplete']
+2481711 20:22:20.589629 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7c26f4929280>>
+2481711 20:22:20.589645 Sending reply (True, None)
+2481711 20:22:20.589731 Command Completed (socket: True)
+2481711 20:22:20.691553 Processing Client
+2481711 20:22:20.691709 Disconnecting Client (socket: True)
+2481711 20:22:20.692789 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7c26f4929280>>
+2481711 20:22:20.693137 No timeout, exiting.
+2481711 20:22:20.795556 Exiting (socket: True)
+2481711 20:22:20.800766 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2481747 20:23:26.102685 --- Starting bitbake server pid 2481747 at 2025-12-11 20:23:26.102665 ---
+2481747 20:23:26.103723 Started bitbake server pid 2481747
+2481747 20:23:26.103929 Entering server connection loop
+2481747 20:23:26.103956 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481747 20:23:26.104841 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481747 20:23:26.106344 Processing Client
+2481747 20:23:26.106462 Connecting Client
+2481747 20:23:26.106884 Running command ['setFeatures', [2, 1]]
+2481747 20:23:26.106914 Sending reply (None, None)
+2481747 20:23:26.107010 Command Completed (socket: True)
+2481747 20:23:26.108801 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x/build', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-custom']]
+2481747 20:23:26.580586 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481747) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481747 20:23:26.603137 Sending reply (None, None)
+2481747 20:23:26.603533 Command Completed (socket: True)
+2481747 20:23:26.603953 Running command ['parseConfiguration']
+2481747 20:23:26.604999 Sending reply (None, None)
+2481747 20:23:26.605098 Command Completed (socket: True)
+2481747 20:23:26.605646 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481747 20:23:26.605748 Sending reply (None, None)
+2481747 20:23:26.605840 Command Completed (socket: True)
+2481747 20:23:26.606263 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481747 20:23:26.606325 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481747 20:23:26.606411 Command Completed (socket: True)
+2481747 20:23:26.613994 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.614057 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.614154 Command Completed (socket: True)
+2481747 20:23:26.614475 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.614673 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.614771 Command Completed (socket: True)
+2481747 20:23:26.617455 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.617487 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.617654 Command Completed (socket: True)
+2481747 20:23:26.617872 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.617917 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.618007 Command Completed (socket: True)
+2481747 20:23:26.619315 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.619340 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.619437 Command Completed (socket: True)
+2481747 20:23:26.619705 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.619750 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.619832 Command Completed (socket: True)
+2481747 20:23:26.620982 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.621015 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.621096 Command Completed (socket: True)
+2481747 20:23:26.621377 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.621421 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.621496 Command Completed (socket: True)
+2481747 20:23:26.622099 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481747 20:23:26.622145 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481747 20:23:26.622220 Command Completed (socket: True)
+2481747 20:23:26.623414 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.623449 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.623523 Command Completed (socket: True)
+2481747 20:23:26.623790 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.623855 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.623933 Command Completed (socket: True)
+2481747 20:23:26.624628 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481747 20:23:26.624662 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481747 20:23:26.624737 Command Completed (socket: True)
+2481747 20:23:26.625003 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481747 20:23:26.625045 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481747 20:23:26.625119 Command Completed (socket: True)
+2481747 20:23:26.626257 Running command ['clientComplete']
+2481747 20:23:26.626386 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70bae77faed0>>
+2481747 20:23:26.626414 Sending reply (True, None)
+2481747 20:23:26.626562 Command Completed (socket: True)
+2481747 20:23:26.632140 Processing Client
+2481747 20:23:26.632345 Disconnecting Client (socket: True)
+2481747 20:23:26.633352 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70bae77faed0>>
+2481747 20:23:26.633808 No timeout, exiting.
+2481747 20:23:26.734512 Exiting (socket: True)
+2481747 20:23:26.738828 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2481764 20:23:39.014120 --- Starting bitbake server pid 2481764 at 2025-12-11 20:23:39.014099 ---
+2481764 20:23:39.015226 Started bitbake server pid 2481764
+2481764 20:23:39.015443 Entering server connection loop
+2481764 20:23:39.015471 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481764 20:23:39.016201 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481764 20:23:39.017677 Processing Client
+2481764 20:23:39.017717 Connecting Client
+2481764 20:23:39.018138 Running command ['setFeatures', [2, 1]]
+2481764 20:23:39.018167 Sending reply (None, None)
+2481764 20:23:39.018258 Command Completed (socket: True)
+2481764 20:23:39.019922 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x/build', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-custom']]
+2481764 20:23:39.489329 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481764) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481764 20:23:39.512967 Sending reply (None, None)
+2481764 20:23:39.513294 Command Completed (socket: True)
+2481764 20:23:39.513700 Running command ['parseConfiguration']
+2481764 20:23:39.514748 Sending reply (None, None)
+2481764 20:23:39.514846 Command Completed (socket: True)
+2481764 20:23:39.515289 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481764 20:23:39.515400 Sending reply (None, None)
+2481764 20:23:39.515478 Command Completed (socket: True)
+2481764 20:23:39.515936 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481764 20:23:39.515988 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481764 20:23:39.516066 Command Completed (socket: True)
+2481764 20:23:39.523885 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.523942 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.524039 Command Completed (socket: True)
+2481764 20:23:39.524363 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.524449 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.524536 Command Completed (socket: True)
+2481764 20:23:39.526075 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.526101 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.526176 Command Completed (socket: True)
+2481764 20:23:39.526437 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.526498 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.526576 Command Completed (socket: True)
+2481764 20:23:39.527847 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.527881 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.527979 Command Completed (socket: True)
+2481764 20:23:39.528248 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.528282 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.528371 Command Completed (socket: True)
+2481764 20:23:39.530440 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.530470 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.530561 Command Completed (socket: True)
+2481764 20:23:39.530863 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.530927 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.531036 Command Completed (socket: True)
+2481764 20:23:39.531833 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.531864 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.531938 Command Completed (socket: True)
+2481764 20:23:39.532197 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.532240 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.532323 Command Completed (socket: True)
+2481764 20:23:39.532934 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481764 20:23:39.532958 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp', None)
+2481764 20:23:39.533042 Command Completed (socket: True)
+2481764 20:23:39.534249 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481764 20:23:39.534274 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   ', None)
+2481764 20:23:39.534358 Command Completed (socket: True)
+2481764 20:23:39.534644 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481764 20:23:39.534684 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+2481764 20:23:39.534835 Command Completed (socket: True)
+2481764 20:23:39.538190 Running command ['revalidateCaches']
+2481764 20:23:39.538801 Found /home/me/Documents/yocto-bbb-scd4x/build/conf/bblayers.conf changed, invalid cache
+2481764 20:23:39.538821 Base config invalidated
+2481764 20:23:39.544372 Sending reply (None, None)
+2481764 20:23:39.544459 Command Completed (socket: True)
+2481764 20:23:39.544820 Running command ['parseConfiguration']
+2481764 20:23:39.840869 Base config valid
+2481764 20:23:39.842672 Sending reply (None, None)
+2481764 20:23:39.842781 Command Completed (socket: True)
+2481764 20:23:39.843682 Running command ['clientComplete']
+2481764 20:23:39.843781 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x731f97be5880>>
+2481764 20:23:39.843797 Sending reply (True, None)
+2481764 20:23:39.843875 Command Completed (socket: True)
+2481764 20:23:39.944165 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x731f97be5880>>
+2481764 20:23:39.944391 Processing Client
+2481764 20:23:39.944472 Disconnecting Client (socket: True)
+2481764 20:23:39.944694 No timeout, exiting.
+2481764 20:23:40.045193 Exiting (socket: True)
+2481764 20:23:40.050798 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2481781 20:23:48.770417 --- Starting bitbake server pid 2481781 at 2025-12-11 20:23:48.770397 ---
+2481781 20:23:48.771428 Started bitbake server pid 2481781
+2481781 20:23:48.771716 Entering server connection loop
+2481781 20:23:48.771744 Lockfile is: /home/me/Documents/yocto-bbb-scd4x/build/bitbake.lock
+Socket is /home/me/Documents/yocto-bbb-scd4x/build/bitbake.sock (True)
+2481781 20:23:48.772443 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+2481781 20:23:48.773960 Processing Client
+2481781 20:23:48.774000 Connecting Client
+2481781 20:23:48.774410 Running command ['setFeatures', [2, 1]]
+2481781 20:23:48.774438 Sending reply (None, None)
+2481781 20:23:48.774528 Command Completed (socket: True)
+2481781 20:23:48.776174 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/me/Documents/yocto-bbb-scd4x/build', 'LOGNAME': 'me', 'HOME': '/home/me', 'BBPATH': '/home/me/Documents/yocto-bbb-scd4x/build', 'USER': 'me', 'PATH': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/mhammer3:@/tmp/.ICE-unix/2827,unix/mhammer3:/tmp/.ICE-unix/2827', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/me/Documents/yocto-bbb-scd4x/poky/scripts:/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2827', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZJIKH3', 'USERNAME': 'me', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9d985c5_6f50_4fd2_8c12_c63c0acf7132', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.236', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=52222ac6cbfa3f8011b0dba7693ab786', 'BUILDDIR': '/home/me/Documents/yocto-bbb-scd4x/build', 'OLDPWD': '/home/me/Documents/yocto-bbb-scd4x', '_': '/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers'}, ['/home/me/Documents/yocto-bbb-scd4x/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+2481781 20:23:49.244975 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2481781) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2481781 20:23:49.266748 Sending reply (None, None)
+2481781 20:23:49.267082 Command Completed (socket: True)
+2481781 20:23:49.267445 Running command ['parseConfiguration']
+2481781 20:23:49.268505 Sending reply (None, None)
+2481781 20:23:49.268597 Command Completed (socket: True)
+2481781 20:23:49.269065 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2481781 20:23:49.269164 Sending reply (None, None)
+2481781 20:23:49.269252 Command Completed (socket: True)
+2481781 20:23:49.269807 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481781 20:23:49.269884 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp:/home/me/Documents/yocto-bbb-scd4x/meta-custom', None)
+2481781 20:23:49.269999 Command Completed (socket: True)
+2481781 20:23:49.277580 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.277636 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.277817 Command Completed (socket: True)
+2481781 20:23:49.278040 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.278147 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.278224 Command Completed (socket: True)
+2481781 20:23:49.280192 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.280244 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.280340 Command Completed (socket: True)
+2481781 20:23:49.280645 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.280704 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.280814 Command Completed (socket: True)
+2481781 20:23:49.281974 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.282021 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.282101 Command Completed (socket: True)
+2481781 20:23:49.282354 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.282408 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.282494 Command Completed (socket: True)
+2481781 20:23:49.284605 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.284650 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.284818 Command Completed (socket: True)
+2481781 20:23:49.284964 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.284999 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.285073 Command Completed (socket: True)
+2481781 20:23:49.285783 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.285817 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.285900 Command Completed (socket: True)
+2481781 20:23:49.286142 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.286177 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.286259 Command Completed (socket: True)
+2481781 20:23:49.286925 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2481781 20:23:49.286950 Sending reply ('/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky:/home/me/Documents/yocto-bbb-scd4x/build:/home/me/Documents/yocto-bbb-scd4x/poky/meta:/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp:/home/me/Documents/yocto-bbb-scd4x/meta-custom', None)
+2481781 20:23:49.287024 Command Completed (socket: True)
+2481781 20:23:49.288288 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2481781 20:23:49.288320 Sending reply ('   /home/me/Documents/yocto-bbb-scd4x/poky/meta   /home/me/Documents/yocto-bbb-scd4x/poky/meta-poky   /home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp   /home/me/Documents/yocto-bbb-scd4x/meta-custom   ', None)
+2481781 20:23:49.288405 Command Completed (socket: True)
+2481781 20:23:49.288668 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2481781 20:23:49.288713 Sending reply ({'core': '/home/me/Documents/yocto-bbb-scd4x/poky/meta/conf/layer.conf', 'yocto': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/conf/layer.conf', 'meta-custom': '/home/me/Documents/yocto-bbb-scd4x/meta-custom/conf/layer.conf'}, None)
+2481781 20:23:49.288790 Command Completed (socket: True)
+2481781 20:23:49.290134 Running command ['getLayerPriorities']
+2481781 20:23:49.290259 Sending reply ([('core', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta/', 5), ('yocto', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-poky/', 5), ('yoctobsp', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/', '^/home/me/Documents/yocto-bbb-scd4x/poky/meta-yocto-bsp/', 5), ('meta-custom', '^/home/me/Documents/yocto-bbb-scd4x/meta-custom/', '^/home/me/Documents/yocto-bbb-scd4x/meta-custom/', 6)], None)
+2481781 20:23:49.290383 Command Completed (socket: True)
+2481781 20:23:49.291228 Running command ['clientComplete']
+2481781 20:23:49.291390 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71df97b31e80>>
+2481781 20:23:49.291557 Sending reply (True, None)
+2481781 20:23:49.291641 Command Completed (socket: True)
+2481781 20:23:49.393104 Processing Client
+2481781 20:23:49.393259 Disconnecting Client (socket: True)
+2481781 20:23:49.394197 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71df97b31e80>>
+2481781 20:23:49.394561 No timeout, exiting.
+2481781 20:23:49.495672 Exiting (socket: True)
+2481781 20:23:49.500865 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/me/Documents/yocto-bbb-scd4x/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
